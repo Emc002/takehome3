@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;  
+}
+
+.content{
+  background-color: #F3EFE0;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  height: 15vh;
+    box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.439);
+
+
+}
+
+.content1{
+  background-color: #F3EFE0;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  height: 30vh;
+    box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.47);
+
+
+}
+
+.garis{
+margin-left: 6rem;  
+
+}
+
+.content:not(:first-child){
+  margin-left: 2rem;
+  border-radius: 1rem;
+  margin-top: -4rem;
+  box-shadow: -1rem 0 3rem rgba(6, 6, 6, 0.423);
+  
+}
+
+.content:hover {
+  transform: translate(0rem, -2rem);
+  border: 5px solid;
+  border-color: #222222;
+  box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.603);
+
+}
+
+.content:hover~.content {
+  transform: translateY(10px);
+
+}
+
+.content1:not(:first-child){
+  margin-left: 2rem;
+  border-radius: 1rem;
+  margin-top: -4rem;
+  box-shadow: -1rem 0 3rem rgb(6, 6, 6);
+  
+}
+
+.content1:hover {
+  transform: translate(0rem, -2rem);
+  border: 5px solid;
+  border-color: #222222;
+}
+
+.content1:hover~.content {
+  transform: translateY(10px);
+}
+
+.detailContent{
+  background-color: #61dafb;
+  margin-left: 2rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+}
+
+.navbar{
+  width: 100vw;
+  margin-bottom: 1rem;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#root{
+  background-color: #22A39F;
+
+  
+}
+
+nav{
+background-color:#434242 ;
+padding: 20px;
+display: flex;
+gap: 20px;
+border-radius: 1rem 1rem;
+list-style: none;
+text-decoration: none;
+margin-top: 1rem;
+margin-left: 1rem;
+}
