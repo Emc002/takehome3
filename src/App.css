@@ -39,6 +39,7 @@
   border-radius: 1rem;
   height: 15vh;
     box-shadow: -0.7rem 2rem 1rem 1rem rgba(0, 0, 0, 0.439);
+    transition: 200ms ease;
 
 
 }
