@@ -26,7 +26,7 @@ function GetAllDataByParam() {
 
   useEffect(() => {
     getParamData();
-  }, []);
+  }, [data]);
 
   const navigate = useNavigate();
   const navigateAddress = (content) => {
