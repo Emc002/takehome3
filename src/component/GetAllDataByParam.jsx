@@ -5,19 +5,16 @@ import { Row, Col } from "antd";
 import "../../src/App.css";
 
 function GetAllDataByParam() {
-  const [photos, setUsers] = useState(null);
+  const [paramdata, setUsers] = useState(null);
 
   const { data } = useParams();
   console.log(data);
 
-  const getPhotos = async () => {
+  const getParamData = async () => {
     try {
       const response = await axios.get(
         `https://jsonplaceholder.typicode.com/${data}?_start=0&_limit=20`
       );
-      console.log(response);
-      console.log("ALLOHA");
-
       if (response.status === 200) {
         setUsers(response.data);
       }
@@ -28,7 +25,7 @@ function GetAllDataByParam() {
   };
 
   useEffect(() => {
-    getPhotos();
+    getParamData();
   }, []);
 
   const navigate = useNavigate();
@@ -38,17 +35,17 @@ function GetAllDataByParam() {
 
   return (
     <Row gutter={[24, 24]}>
-      {photos?.map((photos) => (
+      {paramdata?.map((paramdata) => (
         <Col
           onClick={() => {
-            navigateAddress(photos);
+            navigateAddress(paramdata);
           }}
           className="content1"
           span={23}
         >
-          <p key={photos.id}>{photos.title}</p>
-          <p key={photos.id}>{photos.name}</p>
-          <img src={photos.thumbnailUrl} />
+          <p key={paramdata.id}>{paramdata.title}</p>
+          <p key={paramdata.id}>{paramdata.name}</p>
+          <img src={paramdata.thumbnailUrl} />
         </Col>
       ))}
     </Row>

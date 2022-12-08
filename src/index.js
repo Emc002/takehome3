@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import GetAllData from './component/GetAllData';
-import Detail from './component/Detail';
+import Detail from './pages/Detail';
 import GetAllDataByParam from './component/GetAllDataByParam';
 
 import { Layout } from 'antd';
